@@ -3,10 +3,10 @@ version: 0.2
 phases:
   build:
     commands:
+      - react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res
       - cd android
       - chmod +x gradlew
       - ./gradlew assembleDebug
-      - react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res
       - react-native run-android
 artifacts:
   files:
