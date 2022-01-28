@@ -4,7 +4,7 @@ phases:
    pre_build:
     commands:
       - npm install
-      - npm run build
+      
    build:
     commands:  
       - npm i @react-native-community/cli-platform-android
