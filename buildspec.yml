@@ -3,6 +3,7 @@ version: 0.2
 phases:
   build:
     commands:
+      - npm i @react-native-community/cli-platform-android
       - cd android
       - chmod +x gradlew
       - ./gradlew clean
