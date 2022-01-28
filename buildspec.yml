@@ -3,7 +3,9 @@ version: 0.2
 phases:
   build:
     commands:
-      - npm i @react-native-community/cli-platform-android
+      - npm uninstall -g react-native-cli
+      - npm i -g npx
+      - npx react-native run-android
       - cd android
       - chmod +x gradlew
       - ./gradlew clean
