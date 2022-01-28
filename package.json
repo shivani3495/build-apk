@@ -9,8 +9,7 @@
     "test": "jest",
     "lint": "eslint ."
   },
-  "dependencies": {
-    "@react-native-community/cli-platform-android": "^3.0.0",
+  "dependencies": 
     "@react-native-async-storage/async-storage": "react-native-async-storage/async-storage",
     "@react-native-community/clipboard": "^1.5.1",
     "@react-native-community/datetimepicker": "^3.5.2",
