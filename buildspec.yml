@@ -3,13 +3,11 @@ version: 0.2
 phases:
   build:
     commands:
-      - npm uninstall -g react-native-cli
-      - npm i -g npx
       - cd android
       - chmod +x gradlew
       - ./gradlew assembleDebug
       - react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res
-      - npx react-native run-android
+      - react-native run-android
 artifacts:
   files:
     - '**/*.apk'
