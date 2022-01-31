@@ -12,7 +12,7 @@ phases:
       - cd android
       - chmod +x gradlew
       - ./gradlew assembleDebug
-      - react-native run-android
+      
 artifacts:
   files:
     - '**/*.apk'
