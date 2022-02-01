@@ -15,4 +15,4 @@ phases:
       
 artifacts:
   files:
-    - '**/*.apk'
+      - /app/build/outputs/apk/release/*.apk
