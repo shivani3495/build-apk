@@ -1,19 +1,25 @@
 version: 0.2
 
 phases:
+   install:
+    runtime-versions:
+      android: 29
+      java: corretto8
+      nodejs: 12
+      
    pre_build:
     commands:
       - npm install
       
    build:
-    commands:  
+    commands: 
       - npm i --save-dev @react-native-community/cli
-     # - npm react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res
       - cd android
       - chmod +x gradlew
-      - ./gradlew assembleRelease
+      - ./gradlew assembleDebug
+      #- ./gradlew Debug
       
 artifacts:
   files:
-      - '**/*.apk'
-  discard-paths: yes
+      - '**/*'
+  discard-paths: 'yes'
