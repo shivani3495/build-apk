@@ -10,4 +10,3 @@ sudo wget https://aws-codedeploy-ap-south-1.s3.ap-south-1.amazonaws.com/latest/i
 sudo chmod +x ./install
 sudo ./install auto
 service codedeploy-agent start
-rm install
